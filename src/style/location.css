@@ -1,0 +1,139 @@
+/*__________LOCATIONS___________*/
+#house{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.house{
+    width: 90%;
+}
+.house__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*___________LOCATION INFORMATIONS__________*/
+h2{
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    margin: 0;
+}
+p{
+    color: #FF6060;
+    margin: 10px 0 10px 0;
+}
+.house__left{
+    width: 70%;
+    margin: 40px 0 20px 0;
+}
+.house__right{
+    margin: 30px 0 20px 0;
+    text-align: end;
+}
+.house__host{
+    width: 64px;
+    border-radius: 100%;
+}
+.house__name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.house__name p{
+    width: 46%;
+    line-height: 142.6%;
+    margin: 0 10px 0 0;
+}
+.house__div{
+    height: 100%;
+}
+.house__img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.house__location{
+    font-size: 18px;
+}
+/*_______________TAGS______________*/
+.tags{
+    display: flex;
+    align-items: center;
+}
+.tag{
+    font-size: 14px;
+    padding: 5px 22px;
+    background: #FF6060;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+}
+/*________________RATING IMG _______________*/
+.rating img{
+    margin: 25px 0 0 7px;
+}
+/*___________LOCATIONS RESPONSIVE____________*/
+@media all and (max-width:768px){
+    #house{
+        margin-top: 30px;
+    }
+    .house__box{
+        flex-direction: column;
+    }
+    .house__left{
+        width: 100%;
+        margin: 15px 0 3px 0;
+    }
+    .house__right{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
+    .house__host{
+        width: 40px;
+    }
+    .house__name p{
+        width: 100%;
+    }
+    h2{
+        font-size: 23px;
+    }
+    p{
+        line-height: 142.6%;
+        font-size: 14px;
+    }
+    .tag{
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .rating img{
+        width: 20px;
+        margin: 0 5px 0 0;
+    }
+    .house__boxes .dropdown__button{
+        border-radius: 5px;
+    }
+    .drop{
+        flex-direction: column;
+    }
+    .drop__down{
+        width: 100%;
+    }
+    .rating{
+        text-align: left;
+        align-self: center;
+        width: 100%;
+    }
+    .arrow{
+        height: 25px;
+    }
+    .house__carousel{
+        height: 255px;
+    }
+}

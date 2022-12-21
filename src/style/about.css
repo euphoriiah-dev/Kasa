@@ -1,0 +1,44 @@
+/*___________________ABOUT IMG__________________*/
+.about__section{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+.about{
+    margin-top: 3%;
+}
+.about__img{
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 25px;
+    width: 90%;
+}
+.about__img2{
+    display: none;
+}
+/*__________________RESPONSIVE___________________*/
+@media all and (max-width:768px){
+    .about .dropdown__button{
+        padding: 0 15px 0 15px;
+    }
+    .about__section{
+        height: 200px;
+    }
+    .about__img{
+        display: none;
+    }
+    .about__img2{
+        display: inherit;
+        width: 90%;
+        height: 200px;
+        z-index: -1;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

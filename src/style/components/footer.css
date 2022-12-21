@@ -1,0 +1,27 @@
+/*_________FOOTER________*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background: #000000;
+}
+.footer__text{
+    margin-top: 30px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+/*____________FOOTER RESPONSIVE_____________*/
+@media all and (max-width:768px){
+.footer{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.footer__text{
+    font-size: 14px;
+}
+}
