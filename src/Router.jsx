@@ -13,7 +13,7 @@ function Routing() {
       <div className="App">
          <Header />
          <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/Logement/:id" element={<Logement />} />
             <Route path="/about" element={<About />} />
             <Route path="/*" element={<Error />} />
